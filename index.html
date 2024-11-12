@@ -36,9 +36,9 @@
             gridItem.className = 'grid-item';
 
             const iframe = document.createElement('iframe');
-            iframe.src = `https://viewer.millicast.com?streamId=k9Mwad/multiview`;
+            iframe.src = `https://viewer.millicast.com?streamId=${streamId}`;
             iframe.allowFullscreen = true;
-            console.log(iframe.src)
+            console.log(streamId)
 
             gridItem.appendChild(iframe);
             gridContainer.appendChild(gridItem);
