@@ -29,7 +29,7 @@
 
     <script>
         const gridContainer = document.getElementById('iframeGrid');
-        const streamIds = ['k9Mwad/multiview'];
+        const streamIds = ['k9Mwad/multiview', 'k9Mwad/multiview', 'k9Mwad/multiview', 'k9Mwad/multiview'];
 
         streamIds.forEach(streamId => {
             const gridItem = document.createElement('div');
@@ -38,6 +38,7 @@
             const iframe = document.createElement('iframe');
             iframe.src = `https://viewer.millicast.com?streamId=\${streamId}`;
             iframe.allowFullscreen = true;
+            console.print(iframe.src)
 
             gridItem.appendChild(iframe);
             gridContainer.appendChild(gridItem);
