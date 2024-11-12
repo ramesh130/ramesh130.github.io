@@ -38,7 +38,7 @@
             const iframe = document.createElement('iframe');
             iframe.src = `https://viewer.millicast.com?streamId=\${streamId}`;
             iframe.allowFullscreen = true;
-            console.print(iframe.src)
+            console.log(`Frame \${i + 1} source URL: \${src}`);
 
             gridItem.appendChild(iframe);
             gridContainer.appendChild(gridItem);
